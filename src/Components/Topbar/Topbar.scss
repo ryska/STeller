@@ -7,6 +7,14 @@
     justify-content: space-between;
     padding: 12px 30px 12px 20px;
 
+    @media (max-width: 600px)  {
+        padding: 12px 14px 12px 10px;
+    }
+
+    .logo {
+        @include flex-center;
+    }
+
     .links {
         @include flex-center;
     }

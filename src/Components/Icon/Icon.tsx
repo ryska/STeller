@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { ReactSVG } from "react-svg";
+import "./Icon.scss";
 
 interface IconProps {
   name: string;
@@ -14,6 +15,7 @@ const Icon: FC<IconProps> = ({ name, color }) => {
           console.error(`Error loading SVG: ${error.message}`)
         }
         style={{ fill: color }}
+        className="icon"
       />
   );
 };

@@ -12,8 +12,8 @@ const SidebarSection: FC<SidebarSectionProps> = ({ items }) => {
     <>
       <Divider />
       <div className="sidebarSection">
-        {items.map(({ title, icon, link }) => (
-          <SectionItem title={title} icon={icon} link={link} />
+        {items.map(({ title, icon, link }, idx) => (
+          <SectionItem key={idx} title={title} icon={icon} link={link} />
         ))}
       </div>
     </>

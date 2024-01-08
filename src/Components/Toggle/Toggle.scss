@@ -1,0 +1,45 @@
+@import "./../../utils/colors.scss";
+@import "./../../utils/mixins.scss";
+
+.toggle {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  position: relative;
+
+  .line {
+    width: 24px;
+    height: 2px;
+    background-color: $white;
+    border-radius: 3px;
+    transition: 0.3s ease;
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &.open {
+    .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .line2 {
+      opacity: 0;
+    }
+
+    .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  }
+}
