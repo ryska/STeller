@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useContext } from "react";
 import "./Toggle.scss";
+import Context, { ContextType } from "../../Context/Context";
 
 const Toggle = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { sidebarOpen, updateSidebarOpen } = useContext(Context) as ContextType;
 
   const toggleOpen = () => {
-    setIsOpen(!isOpen);
+    updateSidebarOpen()
   };
 
   return (
     <div className="toggle">
-      <div onClick={toggleOpen} className={`toggle-wrapper ${isOpen ? "open" : ""}`}>
+      <div onClick={toggleOpen} className={`toggle-wrapper ${sidebarOpen ? "open" : ""}`}>
         <div className="line line1"></div>
         <div className="line line2"></div>
         <div className="line line3"></div>

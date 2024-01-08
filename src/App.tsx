@@ -1,15 +1,18 @@
 import "./App.scss";
 import Topbar from "./Components/Topbar/Topbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import Provider from "./Context/Provider";
 
 function App() {
   return (
-    <div className="App">
-      <Topbar />
-      <div>
-        <Sidebar />
+    <Provider>
+      <div className="App">
+        <Topbar />
+        <div>
+          <Sidebar />
+        </div>
       </div>
-    </div>
+    </Provider>
   );
 }
 
