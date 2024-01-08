@@ -1,0 +1,13 @@
+@import './../../utils/colors.scss';
+@import './../../utils/mixins.scss';
+
+.topbar {
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 30px 12px 20px;
+
+    .links {
+        @include flex-center;
+    }
+}
