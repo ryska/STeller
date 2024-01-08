@@ -1,0 +1,53 @@
+[
+    [
+        {
+            "icon": "schedule",
+            "title": "Schedule",
+            "link": "/"
+        },
+        {
+            "icon": "analytics",
+            "title": "Analytics",
+            "link": "/"
+        },
+        {
+            "icon": "stories",
+            "title": "Stories",
+            "link": "/"
+        },
+        {
+            "icon": "engagement-units",
+            "title": "Engagement Units",
+            "link": "/"
+        },
+        {
+            "icon": "ads",
+            "title": "Ads",
+            "link": "/"
+        }
+    ],
+    [
+        {
+            "icon": "cms-users",
+            "title": "CMS Users",
+            "link": "/"
+        },
+        {
+            "icon": "roles",
+            "title": "Roles",
+            "link": "/"
+        },
+        {
+            "icon": "apps",
+            "title": "Apps",
+            "link": "/"
+        }
+    ],
+    [
+        {
+            "icon": "user-guide",
+            "title": "User guide",
+            "link": "/"
+        }
+    ]
+]

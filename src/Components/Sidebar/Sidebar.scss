@@ -1,0 +1,8 @@
+@import './../../utils/colors.scss';
+@import './../../utils/mixins.scss';
+
+.sidebar {
+    background-color: $black;
+    max-width: 228px;
+    width: 100%;
+}

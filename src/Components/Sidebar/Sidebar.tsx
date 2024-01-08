@@ -1,18 +1,13 @@
 import './Sidebar.scss';
+import SidebarSection from './SidebarSection/SidebarSection';
+import sections from './sections.json';
 
-
-const Topbar = () => {
+const Sidebar = () => {
   return (
-    <div className="toolbar drop-shadow-md">
-      <div className='logopic'>
-        <a href='/'>
-        </a>
-      </div>
-      <div className='links'>
-       
-      </div >
+    <div className="sidebar">
+      {sections.map(section => <SidebarSection items={section} />)}
     </div >
   );
 }
 
-export default Topbar;
+export default Sidebar;
