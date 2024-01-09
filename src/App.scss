@@ -7,7 +7,11 @@
 // }
 @import './utils/colors.scss';
 
-.App {
+.app {
     background-color: $black;
   // font-family: 'Euclid Circular B';
+}
+
+.content {
+  display: flex;
 }

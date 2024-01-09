@@ -1,0 +1,10 @@
+@import "./../../utils/colors.scss";
+@import "./../../utils/mixins.scss";
+
+.page {
+    background-color: $gray;
+    width: 100%;
+    height: calc(100vh - 92px);
+    margin: 0 30px 30px 0;
+    border-radius: 0 0 16px 16px;
+}
