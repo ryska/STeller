@@ -2,6 +2,7 @@ import { FC } from "react";
 import { Story } from "../../../types/story";
 import "./TableRow.scss";
 import StoryPages from "../../StoryPages/StoryPages";
+import Badge from "../../Badge/Badge";
 
 
 interface TableRowProps {
@@ -21,7 +22,7 @@ const TableRow: FC<TableRowProps> = ({ story }) => {
       <div className="table-row-date">
         <span>{story.lastModified}</span>
       </div>
-      <div className="table-row-status">{story.status}</div>
+      <div className="table-row-status"><Badge type={story.status} /></div>
       <div className="table-row-date">
         <span>{story.liveFrom}</span>
       </div>

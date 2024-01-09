@@ -1,15 +1,17 @@
 import "./Table.scss";
 import TableRow from "./TableRow/TableRow";
-import mockData from "./../../mocks/stories.json";
 import { Story } from "../../types/story";
+import { useFilteredStories } from "../../hooks/useFilteredStories";
 
 const Table = () => {
-  const stories = mockData as Story[];
+  const stories = useFilteredStories();
+
   return (
     <div className="table">
-      {stories && stories.map((story: Story) => 
-        <TableRow key={story.id} story={story} />
-      )}
+      {stories &&
+        stories.map((story: Story) => (
+          <TableRow key={story.id} story={story} />
+        ))}
     </div>
   );
 };
