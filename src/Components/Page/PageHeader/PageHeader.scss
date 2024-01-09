@@ -1,0 +1,16 @@
+@import "./../../../utils/mixins.scss";
+
+.page-header {
+    @include flex-center-start;
+    align-items: baseline;
+    gap: 30px;
+    padding: 16px 30px;
+
+    @media (max-width: 600px) {
+        gap: 16px;
+    }
+
+    .page-header-info {
+        font-size: 14px;
+    }
+}

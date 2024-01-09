@@ -1,0 +1,19 @@
+@import "./../../utils/mixins.scss";
+
+.story-pages {
+  @include flex-center-start;
+
+  .story-page {
+    width: 30px;
+    max-height: 52px;
+    margin-right: 4px;
+    cursor: pointer;
+
+    img {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+    }
+  }
+}

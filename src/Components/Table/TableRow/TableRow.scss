@@ -1,0 +1,52 @@
+@import "./../../../utils/colors.scss";
+@import "./../../../utils/mixins.scss";
+.table-row {
+    display: flex;
+    height: 84px;
+    background-color: $white;
+    font-size: 14px;
+    padding: 0 20px;
+    
+    &:nth-of-type(2) {
+        background-color: $gray;
+    }
+
+    & > div {
+        background-color: inherit;
+    }
+
+    .table-row-title {
+        @include flex-center;
+        align-items: flex-start;
+        flex-direction: column;
+        min-width: 600px;
+    }
+
+    .table-row-title-label {
+        color: $blue-300;
+    }
+
+    .table-row-title-date {
+        color: $gray-500;
+    }
+
+    .table-row-pages {
+        min-width: 275px;
+        @include flex-center-start;
+    }
+
+    .table-row-date {
+        min-width: 168px;
+        @include flex-center;
+    }
+
+    .table-row-status {
+        min-width: 110px;
+        @include flex-center;
+    }
+
+    .table-row-status {
+        min-width: 168px;
+        @include flex-center;
+    }
+}

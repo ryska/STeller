@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "title": "Daily Horoscope",
+    "pages": [
+      { "id": "1", "url": "https://placekitten.com/50/100", "order": 1 },
+      { "id": "2", "url": "https://placekitten.com/50/100", "order": 2 },
+      { "id": "3", "url": "https://placekitten.com/50/100", "order": 3 }
+    ],
+    "lastModified": "2022-02-15",
+    "status": "LIVE",
+    "liveFrom": "2022-02-20",
+    "endDate": "2022-03-15"
+  },
+  {
+    "id": "2",
+    "title": "Mystery at Midnight",
+    "pages": [
+      { "id": "1", "url": "https://placekitten.com/50/100", "order": 1 },
+      { "id": "2", "url": "https://placekitten.com/50/100", "order": 2 }
+    ],
+    "lastModified": "2022-02-10",
+    "status": "DRAFT",
+    "liveFrom": "2022-03-01",
+    "endDate": "2022-03-31"
+  },
+  {
+    "id": "3",
+    "title": "Mystery at Midnight",
+    "pages": [
+      { "id": "1", "url": "https://placekitten.com/50/100", "order": 1 },
+      { "id": "2", "url": "https://placekitten.com/50/100", "order": 2 },
+      { "id": "3", "url": "https://placekitten.com/50/100", "order": 3 }
+    ],
+    "lastModified": "2022-02-10",
+    "status": "DRAFT",
+    "liveFrom": "2022-03-01",
+    "endDate": "2022-03-31"
+  }
+]
