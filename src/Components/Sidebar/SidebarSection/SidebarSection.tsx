@@ -3,8 +3,14 @@ import './SidebarSection.scss';
 import SectionItem from '../SectionItem/SectionItem';
 import Divider from '../../Divider/Divider';
 
+type SidebarItem = {
+  icon: string;
+  title: string;
+  link: string;
+};
+
 interface SidebarSectionProps {
-  items: any[]; // fix
+  items: SidebarItem[];
 }
 
 const SidebarSection: FC<SidebarSectionProps> = ({ items }) => {

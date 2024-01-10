@@ -12,10 +12,10 @@ const ArrowNavigation: FC<ArrowNavigationProps> = ({
 }) => {
   return (
     <div className="arrow-navigation">
-      <div className="arrow" onClick={onPrevClick}>
+      <div className="arrow" onClick={onPrevClick} tabIndex={0}>
         <Icon name="arrow-left" color="#A3A4AB" />
       </div>
-      <div className="arrow" onClick={onNextClick}>
+      <div className="arrow" onClick={onNextClick} tabIndex={0}>
         <Icon name="arrow-right" color="#A3A4AB" />
       </div>
     </div>

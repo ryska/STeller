@@ -4,7 +4,7 @@ import './SectionItem.scss';
 
 interface SectionItemProps {
   title: string;
-  icon: any; // fix!!
+  icon: string;
   link: string;
 }
 
