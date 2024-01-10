@@ -5,7 +5,7 @@ import { Status } from "../../types/status";
 import { ReactSVG } from "react-svg";
 
 interface DropdownSelectProps {
-  options: { type: string; label: string }[];
+  options: { type: any; label: string }[];
 }
 const DropdownSelect: FC<DropdownSelectProps> = ({ options }) => {
   const { selectedStatus, updateSelectedStatus } = useContext(

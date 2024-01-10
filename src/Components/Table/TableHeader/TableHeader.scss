@@ -1,0 +1,48 @@
+@import "./../../../utils/colors.scss";
+@import "./../../../utils/mixins.scss";
+.table-header {
+  display: flex;
+  font-size: 14px;
+  padding: 16px 30px 8px;
+  border-bottom: 1px solid $gray-300;
+
+  & > div {
+    font-weight: 600;
+  }
+
+  span {
+    margin-right: 4px;
+    cursor: pointer;
+  }
+
+  .table-header-title {
+    @include flex-center-start;
+    min-width: 600px;
+  }
+
+  .table-header-title-date {
+    color: $gray-500;
+  }
+
+  .table-header-pages {
+    min-width: 275px;
+    @include flex-center-start;
+    & span {
+      cursor: default;
+    }
+  }
+
+  .table-header-date {
+    min-width: 168px;
+    @include flex-center-start;
+  }
+
+  .table-header-status {
+    min-width: 110px;
+    @include flex-center-start;
+  }
+
+  .table-header-buttons {
+    min-width: 168px;
+  }
+}

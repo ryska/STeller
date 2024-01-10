@@ -1,20 +1,25 @@
 @import "./../../utils/colors.scss";
 @import "./../../utils/mixins.scss";
+
 .badge {
-    color: $white;
-    padding: 2px 7px;
-    border-radius: 3px;
-    font-weight: 700;
-    font-size: 11px;
-    &.DRAFT {
-        background-color: $blue-300;
-    }
-    &.LIVE {
-        background-color: $green;
-    }
+  color: $white;
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+  &.DRAFT,
+  &.SCHEDULED {
+    background-color: $blue-300;
+  }
+  &.LIVE {
+    background-color: $green;
+  }
 
-    &.SCHEDULED {
-        background-color: $gray-500;
-
-    }
+  &.PAST {
+    background-color: $gray-500;
+  }
 }

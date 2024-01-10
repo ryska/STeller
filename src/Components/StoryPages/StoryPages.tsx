@@ -7,15 +7,21 @@ interface StoryPagesProps {
 }
 
 const StoryPages: FC<StoryPagesProps> = ({ pages }) => {
+  const visiblePages = pages.slice(0, 6);
   return (
     <div className="story-pages">
-      {pages.map((page) => (
+      {visiblePages.map((page) => (
         <div className="story-page">
           <a href={page.url} target="_blank">
-          <img src={page.url} alt="story page" />
+            <img src={page.url} alt="story page" />
           </a>
         </div>
       ))}
+      {pages.length > 6 && (
+        <div className="story-page more">
+          <span>+7</span>
+        </div>
+      )}
     </div>
   );
 };

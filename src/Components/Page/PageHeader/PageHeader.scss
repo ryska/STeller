@@ -1,16 +1,28 @@
 @import "./../../../utils/mixins.scss";
 
 .page-header {
-    @include flex-center-start;
-    align-items: baseline;
-    gap: 30px;
-    padding: 16px 30px;
+  @include flex-center-start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 30px;
+  padding: 16px 30px;
 
+  @media (max-width: 600px) {
+    flex-wrap: nowrap;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .page-header-info {
+    font-size: 14px;
     @media (max-width: 600px) {
-        gap: 16px;
+      display: none;
     }
-
-    .page-header-info {
-        font-size: 14px;
+  }
+  .page-header-button {
+    margin-left: auto;
+    @media (max-width: 600px) {
+      display: none;
     }
+  }
 }

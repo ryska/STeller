@@ -1,0 +1,30 @@
+@import "./../../utils/colors.scss";
+@import "./../../utils/mixins.scss";
+
+.input-component {
+  width: 100%;
+  max-width: 60px;
+  height: 32px;
+  display: flex;
+  .input {
+    border: 1px solid $gray-300;
+    border-radius: 3px;
+    padding-left: 12px;
+    width: 100%;
+    height: 100%;
+
+    &:focus,
+    &:active,
+    &:focus ~ .input-icon,
+    &:active ~ .input-icon {
+      outline-width: 0;
+      outline: 0;
+      box-shadow: 0;
+      -moz-box-shadow: none;
+      -webkit-outline: 0;
+      -moz-outline: 0;
+      -webkit-box-shadow: none;
+      border-color: $gray-400;
+    }
+  }
+}

@@ -12,6 +12,7 @@
   @media (max-width: 600px) {
     position: absolute;
     left: -228px;
+    height: calc(100vh - 52px);
     &.open {
       left: 0;
     }

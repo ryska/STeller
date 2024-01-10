@@ -10,8 +10,8 @@ const Toggle = () => {
   };
 
   return (
-    <div className="toggle">
-      <div onClick={toggleOpen} className={`toggle-wrapper ${sidebarOpen ? "open" : ""}`}>
+    <div className="toggle" onClick={toggleOpen}>
+      <div className={`toggle-wrapper ${sidebarOpen ? "open" : ""}`}>
         <div className="line line1"></div>
         <div className="line line2"></div>
         <div className="line line3"></div>

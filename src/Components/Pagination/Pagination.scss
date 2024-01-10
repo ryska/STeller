@@ -1,0 +1,21 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  margin: 24px 30px 0 auto;
+
+  @media (max-width: 600px) {
+    margin: 16px 16px 0 auto;
+
+  }
+
+  .pagination-dropdown-wrapper {
+    margin-left: 30px;
+    width: 110px;
+  }
+
+  .pagination-nav-wrapper {
+    margin-left: 30px;
+  }
+}

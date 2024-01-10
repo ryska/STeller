@@ -1,0 +1,21 @@
+@import "./../../utils/colors.scss";
+@import "./../../utils/mixins.scss";
+
+.button {
+    @include flex-center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    &.green {
+        background-color: $green;
+        border: 1px solid $green;
+        color: $white;
+    }
+    &.red {
+        background-color: $white;
+        border: 1px solid $red;
+    }
+}

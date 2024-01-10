@@ -1,0 +1,18 @@
+@import "./../../utils/colors.scss";
+@import "./../../utils/mixins.scss";
+
+.arrow-navigation {
+  border-radius: 3px;
+  border: 1px solid $gray-300;
+  display: flex;
+  background-color: $white;
+  .arrow {
+    @include flex-center;
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+    &:first-of-type {
+      border-right: 1px solid $gray-300;
+    }
+  }
+}

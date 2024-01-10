@@ -1,4 +1,10 @@
+@import "./../../utils/colors.scss";
+
 .table {
-    overflow-x: scroll;
-    width: calc(100vw - 228px);
+  overflow-x: scroll;
+  width: calc(100vw - 258px);
+
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
 }
