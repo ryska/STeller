@@ -1,11 +1,11 @@
-import { FC } from "react";
-import { Story } from "../../../types/story";
-import "./TableRow.scss";
-import StoryPages from "../../StoryPages/StoryPages";
-import Badge from "../../Badge/Badge";
-import Button from "../../Button/Button";
-import useFormattedDate from "../../../hooks/useFormattedDate";
-import formatMonthDay from "../../../hooks/useFormattedMonthDay";
+import { FC } from 'react';
+import { Story } from '../../../types/story';
+import './TableRow.scss';
+import StoryPages from '../../StoryPages/StoryPages';
+import Badge from '../../Badge/Badge';
+import Button from '../../Button/Button';
+import useFormattedDate from '../../../hooks/useFormattedDate';
+import formatMonthDay from '../../../hooks/useFormattedMonthDay';
 
 interface TableRowProps {
   story: Story;
@@ -17,7 +17,7 @@ const TableRow: FC<TableRowProps> = ({ story }) => {
       <div className="table-row-title">
         <span className="table-row-title-label">{story.title}</span>
         <span className="table-row-title-date">
-          ({formatMonthDay(story.liveFrom as string) || "No publish date set"})
+          ({formatMonthDay(story.liveFrom as string) || 'No publish date set'})
         </span>
       </div>
       <div className="table-row-pages">

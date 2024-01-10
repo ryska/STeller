@@ -1,8 +1,8 @@
-import "./App.scss";
-import Topbar from "./Components/Topbar/Topbar";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import Provider from "./Context/Provider";
-import Page from "./Components/Page/Page";
+import './App.scss';
+import Topbar from './Components/Topbar/Topbar';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Provider from './Context/Provider';
+import Page from './Components/Page/Page';
 
 function App() {
   return (

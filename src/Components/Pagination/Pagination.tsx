@@ -1,8 +1,8 @@
-import "./Pagination.scss";
-import Input from "../Input/Input";
-import DropdownSelect from "../DropdownSelect/DropdownSelect";
-import { paginationOptions } from "./options";
-import ArrowNavigation from "../ArrowNavigation/ArrowNavigation";
+import './Pagination.scss';
+import Input from '../Input/Input';
+import DropdownSelect from '../DropdownSelect/DropdownSelect';
+import { paginationOptions } from './options';
+import ArrowNavigation from '../ArrowNavigation/ArrowNavigation';
 
 const Pagination = () => {
   return (

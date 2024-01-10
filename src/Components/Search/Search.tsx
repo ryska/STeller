@@ -1,7 +1,7 @@
-import { ChangeEvent, useContext } from "react";
-import Context, { ContextType } from "../../Context/Context";
-import { ReactSVG } from "react-svg";
-import "./Search.scss";
+import { ChangeEvent, useContext } from 'react';
+import Context, { ContextType } from '../../Context/Context';
+import { ReactSVG } from 'react-svg';
+import './Search.scss';
 
 const Search = () => {
   const { searchValue, updateSearchValue } = useContext(Context) as ContextType;

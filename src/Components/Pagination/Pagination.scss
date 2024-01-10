@@ -7,15 +7,18 @@
 
   @media (max-width: 600px) {
     margin: 16px 16px 0 auto;
-
   }
 
   .pagination-dropdown-wrapper {
     margin-left: 30px;
     width: 110px;
+
+    @media (max-width: 600px) {
+      margin-left: 16px;
+    }
   }
 
   .pagination-nav-wrapper {
-    margin-left: 30px;
+    margin-left: 16px;
   }
 }

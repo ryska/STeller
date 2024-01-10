@@ -1,5 +1,5 @@
-import { FC } from "react";
-import "./Input.scss";
+import { FC } from 'react';
+import './Input.scss';
 
 interface InputProps {
   value: number;
@@ -8,14 +8,13 @@ interface InputProps {
 }
 
 const Input: FC<InputProps> = ({ value, placeholder, onChange }) => {
-
   return (
     <>
       <div className="input-component">
         <input
           className="input"
           type="text"
-          placeholder={placeholder || "Type"}
+          placeholder={placeholder || 'Type'}
           value={value}
           onChange={onChange}
           name="searchInput"

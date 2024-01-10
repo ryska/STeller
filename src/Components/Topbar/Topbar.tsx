@@ -1,8 +1,8 @@
-import Icon from "../Icon/Icon";
-import Toggle from "../Toggle/Toggle";
-import User from "../User/User";
-import Logo from "./Logo/Logo";
-import "./Topbar.scss";
+import Icon from '../Icon/Icon';
+import Toggle from '../Toggle/Toggle';
+import User from '../User/User';
+import Logo from './Logo/Logo';
+import './Topbar.scss';
 
 const Topbar = () => {
   return (

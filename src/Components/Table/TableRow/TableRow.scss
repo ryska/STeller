@@ -1,5 +1,5 @@
-@import "./../../../utils/colors.scss";
-@import "./../../../utils/mixins.scss";
+@import './../../../utils/colors.scss';
+@import './../../../utils/mixins.scss';
 
 .table-row {
   display: flex;
@@ -9,7 +9,6 @@
   font-size: 14px;
   padding: 0 30px;
 
-  
   &:nth-of-type(even) {
     background-color: $white;
   }

@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+### ST Table view
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a recrutiment project that required coding a view page. I decided to use create-react-app, typescript and scss. For state management I'm using React Context
 
-## Available Scripts
+### To run the project you need to:
 
-In the project directory, you can run:
+1. Clone the project
 
-### `npm start`
+2. `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. `npm start`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Open `localhost:3000`
 
-### `npm test`
+### Improvements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. For this project I used implemented the view, table filtering, mocked server response
 
-### `npm run build`
+2. Future improvements:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   a) Not every component is fully working, for example: sorting, pagination, user icon on top, sidebar navigation.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   b) Sidebar navigation: I'd implement react router with outlets to change content in page.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   c) File structure: I could move some components to a component librabry/design system directory.
 
-### `npm run eject`
+   d) If any functionality would be passed to components (button, input etc) I'd wrap them in useCallback/useMemo to keep them performant.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+3. Tests
+4. Linting files on pre-commit.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Enjoy and happy new year 🎉

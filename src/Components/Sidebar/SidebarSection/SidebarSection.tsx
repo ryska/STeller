@@ -1,7 +1,7 @@
-import { FC } from "react";
-import "./SidebarSection.scss";
-import SectionItem from "../SectionItem/SectionItem";
-import Divider from "../../Divider/Divider";
+import { FC } from 'react';
+import './SidebarSection.scss';
+import SectionItem from '../SectionItem/SectionItem';
+import Divider from '../../Divider/Divider';
 
 interface SidebarSectionProps {
   items: any[]; // fix

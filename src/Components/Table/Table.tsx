@@ -1,10 +1,10 @@
-import "./Table.scss";
-import TableRow from "./TableRow/TableRow";
-import { Story } from "../../types/story";
-import { useFilteredStories } from "../../hooks/useFilteredStories";
-import TableHeader from "./TableHeader/TableHeader";
-import Pagination from "../Pagination/Pagination";
-import { memo } from "react";
+import './Table.scss';
+import TableRow from './TableRow/TableRow';
+import { Story } from '../../types/story';
+import { useFilteredStories } from '../../hooks/useFilteredStories';
+import TableHeader from './TableHeader/TableHeader';
+import Pagination from '../Pagination/Pagination';
+import { memo } from 'react';
 
 const Table = () => {
   const stories = useFilteredStories();

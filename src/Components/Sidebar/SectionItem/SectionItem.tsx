@@ -1,6 +1,6 @@
-import { FC } from "react";
-import Icon from "../../Icon/Icon";
-import "./SectionItem.scss";
+import { FC } from 'react';
+import Icon from '../../Icon/Icon';
+import './SectionItem.scss';
 
 interface SectionItemProps {
   title: string;
@@ -11,8 +11,8 @@ interface SectionItemProps {
 const SectionItem: FC<SectionItemProps> = ({ title, icon, link }) => {
   return (
     <a className="section-item" href={link}>
-        <Icon name={icon} color="#76A0F0" />
-        <span className="section-title">{title}</span>
+      <Icon name={icon} color="#76A0F0" />
+      <span className="section-title">{title}</span>
     </a>
   );
 };

@@ -1,15 +1,15 @@
-import { ChangeEvent, FC, useContext } from "react";
-import Context, { ContextType } from "../../Context/Context";
-import "./DropdownSelect.scss";
-import { Status } from "../../types/status";
-import { ReactSVG } from "react-svg";
+import { ChangeEvent, FC, useContext } from 'react';
+import Context, { ContextType } from '../../Context/Context';
+import './DropdownSelect.scss';
+import { Status } from '../../types/status';
+import { ReactSVG } from 'react-svg';
 
 interface DropdownSelectProps {
   options: { type: any; label: string }[];
 }
 const DropdownSelect: FC<DropdownSelectProps> = ({ options }) => {
   const { selectedStatus, updateSelectedStatus } = useContext(
-    Context
+    Context,
   ) as ContextType;
 
   const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
@@ -33,7 +33,7 @@ const DropdownSelect: FC<DropdownSelectProps> = ({ options }) => {
       <div className="select-arrow">
         <ReactSVG
           src="/images/arrow-down.svg"
-          style={{ fill: "#171A25" }}
+          style={{ fill: '#171A25' }}
           className="icon"
         />
       </div>

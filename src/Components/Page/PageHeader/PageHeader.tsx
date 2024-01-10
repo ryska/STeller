@@ -1,11 +1,11 @@
-import { FC, useContext } from "react";
+import { FC, useContext } from 'react';
 
-import "./PageHeader.scss";
-import Search from "../../Search/Search";
-import DropdownSelect from "../../DropdownSelect/DropdownSelect";
-import { StatusList } from "../../../types/status";
-import Context, { ContextType } from "../../../Context/Context";
-import Button from "../../Button/Button";
+import './PageHeader.scss';
+import Search from '../../Search/Search';
+import DropdownSelect from '../../DropdownSelect/DropdownSelect';
+import { StatusList } from '../../../types/status';
+import Context, { ContextType } from '../../../Context/Context';
+import Button from '../../Button/Button';
 
 const PageHeader: FC = () => {
   const { stories } = useContext(Context) as ContextType;

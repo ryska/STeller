@@ -1,6 +1,6 @@
-import { FC } from "react";
-import "./Badge.scss";
-import { Status } from "../../types/status";
+import { FC } from 'react';
+import './Badge.scss';
+import { Status } from '../../types/status';
 
 interface BadgeProps {
   type: Status;

@@ -2,20 +2,20 @@
 @import './../../utils/mixins.scss';
 
 .topbar {
-    background-color: $black;
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 30px 12px 20px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px 12px 20px;
 
-    @media (max-width: 600px)  {
-        padding: 0px 8px;
-    }
+  @media (max-width: 600px) {
+    padding: 0px 8px;
+  }
 
-    .logo {
-        @include flex-center;
-    }
+  .logo {
+    @include flex-center;
+  }
 
-    .links {
-        @include flex-center;
-    }
+  .links {
+    @include flex-center;
+  }
 }

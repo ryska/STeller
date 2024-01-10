@@ -1,6 +1,6 @@
-import { FC } from "react";
-import "./StoryPages.scss";
-import { Page } from "../../types/story";
+import { FC } from 'react';
+import './StoryPages.scss';
+import { Page } from '../../types/story';
 
 interface StoryPagesProps {
   pages: Page[];

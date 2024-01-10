@@ -1,5 +1,5 @@
-@import "./../../utils/colors.scss";
-@import "./../../utils/mixins.scss";
+@import './../../utils/colors.scss';
+@import './../../utils/mixins.scss';
 
 .page {
   background-color: $gray;
@@ -9,7 +9,7 @@
   padding-top: 16px 30px;
   display: flex;
   flex-direction: column;
-  
+
   &.shade {
     filter: brightness(30%);
     pointer-events: none;

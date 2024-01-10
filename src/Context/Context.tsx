@@ -11,7 +11,7 @@ export type ContextType = {
   updateSearchValue: (value: string) => void;
   updateSelectedStatus: (status: Status) => void;
   updateStories: (stories: Story[]) => void;
-}
+};
 
 const Context = createContext<ContextType | null>(null);
 

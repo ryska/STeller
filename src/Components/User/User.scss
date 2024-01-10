@@ -2,19 +2,19 @@
 @import './../../utils/mixins.scss';
 
 .user {
-    background-color: $blue-700;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    color: $white;
-    font-size: 20px;
-    @include flex-center;
-    margin-left: 32px;
+  background-color: $blue-700;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  color: $white;
+  font-size: 20px;
+  @include flex-center;
+  margin-left: 32px;
 
-    @media (max-width: 600px)  {
-        margin-left: 20px;
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-    }
+  @media (max-width: 600px) {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
 }

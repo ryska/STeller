@@ -1,5 +1,5 @@
-import "./TableHeader.scss";
-import Icon from "../../Icon/Icon";
+import './TableHeader.scss';
+import Icon from '../../Icon/Icon';
 
 const TableHeader = () => {
   return (
@@ -20,7 +20,7 @@ const TableHeader = () => {
         <Icon name="sort" color="#A3A4AB" />
       </div>
       <div className="table-header-date">
-        {" "}
+        {' '}
         <span>Live from</span>
         <Icon name="sort" color="#A3A4AB" />
       </div>
@@ -28,8 +28,7 @@ const TableHeader = () => {
         <span>Ends</span>
         <Icon name="sort" color="#A3A4AB" />
       </div>
-      <div className="table-header-buttons">
-      </div>
+      <div className="table-header-buttons"></div>
     </div>
   );
 };
